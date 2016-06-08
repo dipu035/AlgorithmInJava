@@ -7,7 +7,8 @@ package com.sample.algorithminjava;
 
 /**
  *
- * @author tibriz Java program for implementation of Selection Sort
+ * @author tibriz 
+ * Java program for implementation of Selection Sort
  */
 public class SelectionSort {
 
@@ -28,6 +29,7 @@ public class SelectionSort {
      * The method that sorts the given array using insertion sort algorithm.
      *
      * @param arr is the input array that needs to be sorted.
+     * @return The sorted array.
      */
     public int[] sort(int[] arr) {
         int n = arr.length;
@@ -45,6 +47,11 @@ public class SelectionSort {
             arr[minIndex] = arr[i];
             arr[i] = temp;
         }
+        System.out.println("Sorted Array (Selection Sort) : ");
+        for (int i = 0; i < n - 1; i++) {
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println("");
         return arr;
     }
 }

@@ -27,6 +27,14 @@ public class AlgorithmTest {
         SelectionSort selectionSort = new SelectionSort();
         int arr[] = {64, 25, 12, 22, 11, 2, 46, 25, 123};
         int[] result = {2, 11, 12, 22, 25, 25, 46, 64, 123};
-        Assert.assertArrayEquals("Element should be at index 4", result, selectionSort.sort(arr));
+        Assert.assertArrayEquals("Element didn't sorted properly", result, selectionSort.sort(arr));
+    }
+    
+     @Test
+    public void bubbleSortTest() {
+        BubbleSort bubbleSort = new BubbleSort();
+        int arr[] = {64, 25, 12, 22, 11, 2, 46, 25, 123};
+        int[] result = {2, 11, 12, 22, 25, 25, 46, 64, 123};
+        Assert.assertArrayEquals("Element didn't sorted properly", result, bubbleSort.sort(arr));
     }
 }
