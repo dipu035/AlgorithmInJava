@@ -19,7 +19,11 @@ public class AlgorithmTest {
         BinarySearch binarySearch = new BinarySearch();
         int arr[] = {2, 3, 4, 10, 15, 20, 34};
         int x = 15;
+        int y = 20;
         Assert.assertEquals("Element should be at index 4", 4, binarySearch.binarySearchIteration(arr, x));
+        System.out.println("Start of Binary Search Loop >>>");
+        Assert.assertEquals("Element should be at index 5", 5, binarySearch.binarySearchLoop(arr, y));
+        System.out.println("<<< End of Binary Search Loop.");
     }
 
     @Test
